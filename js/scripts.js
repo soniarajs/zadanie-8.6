@@ -19,4 +19,4 @@ var triangle1Area = getTriangleArea(10, 15);
 var triangle2Area = getTriangleArea(7, 1);
 var triangle3Area = getTriangleArea(-4, 0);
 
-consoloe.log(triangle1Area, triangle2Area, triangle3Area);
+console.log(triangle1Area, triangle2Area, triangle3Area);
