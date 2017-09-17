@@ -1,0 +1,527 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.row {
+	position: relative;
+}
+	
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container2 {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0px auto 50px;
+	padding: 0;
+	text-align: center;
+}
+
+body {
+	margin: 0;
+}
+
+section {
+	position: relative;
+}
+
+header {
+	background-color: rgb(46, 46, 20);
+}
+
+nav {
+	background-color: #2E2E14;
+	
+	
+	/*position: fixed; -czemu napisy w menu przesuwają się na dół?*/
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #594D19;	
+	text-transform: uppercase;
+	font-size: 33px;
+}
+
+header ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	color: #ccc;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 50px;
+	float: right;
+	line-height: 120px; /*czemu nie jest wyśrodkowane? - tu sie ogólnie rozjeżdza - trzeba było dodać float right i margin top/bottom 0;*/
+	font-size: 20px;
+	
+}
+
+li {
+	display: inline-block;
+}
+
+header > nav > ul > li > a { /*nav ul czy nav > ul ?? */
+	text-decoration: none;
+	color: #ccc;
+	cursor: pointer;
+	padding: 5px 15px;
+}
+
+header > nav > ul > li > a:hover {
+	color: #FBE5D2;
+}
+
+nav > img {
+	width: 100px;
+	padding: 5px;
+	margin-left: 30px;
+	margin-top: 15px;
+	position: relative;
+	top: 50%;
+}
+
+main > section > img {
+	width: 100%;
+}
+
+.slogan {
+	background-color: #2E2E14;
+	height: 150px;
+	max-width: 600px; /*jak jest max to w którym momencie osiąga ten max? Bo nawet na fullscreenie jest mniejsze niż 600px MOŻNA DODAC WIDTH W % ALE ZOSTANIE PUSTA PRZESTRZEŃ*/
+	opacity: 0.8;
+	position: absolute;
+	top: 200px;
+	right: 0px; /*jak dam float: right to przylega do lewej strony..*/
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+} 
+
+.slogan h1 {
+	margin: 35px 40px;
+	color: #ccc;
+}
+
+.value {
+	max-width: 1200px;
+	margin: 140px auto;
+}
+
+.value .fa {
+	font-size: 110px;
+	color: #594D19;
+}
+
+p {
+	color: #802D04;
+	text-align: center;
+}
+
+.col-m-4 p {
+	padding: 0 35px;
+}
+
+h2 {
+	color: #5E4422;
+}
+
+.players h1 {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.players {
+	float: none;
+	padding: 0 50px 0;
+}
+
+
+.gallery img {
+	width: 100%; /*czemu jak to usuniemy to zdjęcia rozciągną się w pionie?*/
+	height: 100%;
+	cursor: pointer;
+	transition: 0.2s;
+	display: block;
+}
+
+.gallery col-m-3a {
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+	transition: background 400ms;
+}
+
+.layer .fa {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+  	margin: 0 10px;
+  	opacity: 0;
+  	transition: opacity 600ms;
+	font-size: 35px;
+	color: #edc7b9;
+}
+
+.col-m-3a:hover .layer {
+	background-color: rgba(46,46,20, 0.5);
+	cursor: pointer;
+	
+}
+
+.col-m-3a:hover .layer .fa{
+	opacity: 1;
+}
+
+.circle {
+	max-height: 250px;
+    max-width: 250px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.circle img {
+	width: 430px;
+	margin-left: -40px;
+}
+
+
+.portraits {
+	margin-top: 70px;
+	text-align: center;
+}
+
+.full-bk {
+	background-image: url(https://images.pexels.com/photos/102970/pexels-photo-102970.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+    background-size: cover;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+.full-bk img {
+	width: 120%;
+	z-index: -1;
+}
+
+.phone img {
+	width: 600px;
+	margin-top: 60px;
+}
+
+.tel h1, .tel p {
+	margin: 0 100px;
+	text-align: left;
+	padding: 10px;
+}
+	
+.tel {
+	margin-top: 70px;
+}
+
+.statistic {
+	width: 100%;
+	max-width: 1200px;
+	margin: 90px auto 50px;
+	padding: 0;
+	text-align: center;
+}
+
+.footer {
+	background-color: rgb(46, 46, 20);
+	margin: 120px auto 0;
+}
+
+.about {
+	margin-top: 20px;
+}
+
+p2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #594D19;	
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.about p, .about p2 {
+	color: #fff;
+	text-align: left;
+}
+	
+.copyright {
+	width: 100%;
+	background-color: #272822;
+	height: 80px;
+}
+
+.copyright p {
+	color: #fff;
+	margin: 0;
+	line-height: 70px;
+}
+
+button {
+	border: none;
+	padding: 0;
+	margin: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.icon-btn {
+	height: 50px;
+	width: 50px;
+	font-size: 10px; /*czemu ikony sa jako font?*/
+	line-height: 65px; /*mogę sobie wyrównać ikony w kółku ta wartością? Czy to jest poprawne?*/
+	background-color: #fff;
+	transition: ease-in-out .2s
+}
+
+
+.icon-btn:hover {
+	transform: scale(1.1);
+	background-color: #BA8674;
+	color: white;
+}
+
+.fa {
+	font-size: 35px;
+	margin-top: 10px;
+}
+	
+
+@media(max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-3a {width: 20%; height: auto; position: relative;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-4a {width: 40%; height: auto; position: relative;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {
+    	width: 100%; 
+    	margin: 0 auto;
+    	position: relative;
+    }
+    
+    nav {
+		background-color: #2E2E14;
+		height: auto;
+	}
+	
+	nav > img {
+		float: none;
+		margin: 20px;
+		transform: none;
+	}
+
+	header ul {
+		line-height: 70px; /*czemu nie jest wyśrodkowane? - tu sie ogólnie rozjeżdza - trzeba było dodać float right i margin top/bottom 0;*/
+		font-size: 1.2em;
+		margin: 40px;
+		float: none;
+		padding: 0;
+	}
+	
+	li {
+		display: block;
+	}
+	
+	.col-m-3a:hover .layer {
+	background-color: rgba(46,46,20, 0.0);
+	cursor: pointer;
+	}
+	
+	.layer .fa {
+  	opacity: 1;
+	font-size: 55px;
+	color: #fff;
+	padding: 20px;
+	}
+	
+	.slogan {
+		height: 25vh;
+		opacity: 1;
+		display: block;
+		position: static;
+		transform: none;
+		max-width: 100%;
+	}
+	
+	.slogan h1 {
+		margin: 0;
+		text-align: center;
+		padding: 20px;
+		font-size: 25px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	
+	}
+	
+	.bk-photo img {
+		display: block;
+	}
+	
+	.value {
+		max-width: 1200px;
+		margin: 5% auto;
+	}
+	
+	.container2 {
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+	
+	.players h1 {
+		margin-bottom: 20px;
+	}
+	
+	.players p {
+		margin-bottom: 5%;
+	}
+
+	
+	.phone img {
+		width: 100%;
+	}
+	
+	.tel h1, .tel p {
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+	}
+	
+	.tel {
+		padding-top: 20px;
+		background-color: rgba(40, 70, 100, 0.6);
+	}
+	
+	.full-bk {
+		height: auto;
+	}
+	
+	.footer {
+		background-color: rgb(46, 46, 20);
+		margin: 30px auto 0;
+	}
+	
+	.icon-btn {
+		height: 50px;
+		width: 50px;
+		font-size: 10px; /*czemu ikony sa jako font?*/
+		line-height: 65px; /*mogę sobie wyrównać ikony w kółku ta wartością? Czy to jest poprawne?*/
+		background-color: #fff;
+		display: inline-block;
+	}
+	
+	.layer {
+		display: block;
+	}
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-3a {width: 20%; height: auto; position: relative;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-4a {width: 40%; height: auto; position: relative;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For tablet: */
+   
+    .col-sm-6 {width: 50%; position: relative;}
+
+  
+	.col-m-3a:hover .layer {
+	background-color: rgba(46,46,20, 0);
+	cursor: pointer;
+	}
+	
+	.layer .fa {
+	  	opacity: 1;
+		font-size: 55px;
+		color: #fff;
+		padding: 20px;
+		position: relative;
+	}
+	
+	.slogan {
+		height: 25vh;
+		opacity: 1;
+		display: block;
+		position: static;
+		transform: none;
+		max-width: 100%;
+	}
+	.slogan h1 {
+		margin: 0;
+		text-align: center;
+		font-size: 25px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.bk-photo img {
+		display: block;
+	}
+
+}
+
+
+
+
